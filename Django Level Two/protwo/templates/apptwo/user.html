@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body>
+    <h1>Here are users for apptwo</h1>
+    {% if user_dict %}
+
+    <ol>
+        {% for user in user_dict %}
+        <li>User info</li>
+        <ol>
+            <li>First Name : {{user.first_name}}</li>
+            <li>last Name : {{user.last_name}}</li>
+            <li>Email : {{user.email}}</li>
+        </ol>
+        {% endfor%}
+    </ol>
+    {% endif %}
+</body>
+</html>
