@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+{% extends "firstapp/base.html"%}
+
+{% block body_block %}
+
+    <div class="jambotron">
+     
+    <h1>relative_url-template</h1>
+    <!-- #app_name='basic_app' is in uls.py app name and other is the name-->
+    <a href="{% url 'basic_app:other' %}"> the other page</a> <br>
+    <a href="{% url 'admin:index' %}">Admin page link</a> <br>
+    <a href="{% url 'index' %}">Index page link</a> <br>
+      <h3> This is the example of template inheritance</h3>
+      <br/>
+    </div>
+    
+    {%endblock%}
+    
